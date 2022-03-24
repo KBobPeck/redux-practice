@@ -1,0 +1,23 @@
+{
+  "name": "react-redux-practice",
+  "version": "1.0.0",
+  "description": "practicing react and redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatFitso/redux-practice.git"
+  },
+  "keywords": [
+    "react",
+    "redux"
+  ],
+  "author": "Kyle Peck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatFitso/redux-practice/issues"
+  },
+  "homepage": "https://github.com/KatFitso/redux-practice#readme"
+}
