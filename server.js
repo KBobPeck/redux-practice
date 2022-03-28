@@ -8,6 +8,9 @@ const PORT = process.env.PORT || 3000;
 const connectdb = require("./db");
 connectdb();
 
+//*INIT MIDDLEWARE */
+app.use(express.json({extended: false}))
+
 //*ROUTES */
 app.get("/", (req, res) => {
   res.send("API Running");
