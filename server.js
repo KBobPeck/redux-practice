@@ -9,7 +9,7 @@ const connectdb = require("./db");
 connectdb();
 
 //*INIT MIDDLEWARE */
-app.use(express.json({extended: false}))
+app.use(express.json({ extended: false }));
 
 //*ROUTES */
 app.get("/", (req, res) => {
@@ -18,10 +18,10 @@ app.get("/", (req, res) => {
 
 const currentVersion = "/api/v1";
 
-app.use(`${currentVersion}/auth`, require("./routes/api/auth"));
-app.use(`${currentVersion}/posts`, require("./routes/api/posts"));
-app.use(`${currentVersion}/profile`, require("./routes/api/profile"));
-app.use(`${currentVersion}/users`, require("./routes/api/users"));
+app.use(`${currentVersion}/auth`, require("./api/auth"));
+app.use(`${currentVersion}/posts`, require("./api/posts"));
+app.use(`${currentVersion}/profile`, require("./api/profile"));
+app.use(`${currentVersion}/users`, require("./api/users"));
 
 //*APP STARTUP */
 app.listen(PORT, () => {
